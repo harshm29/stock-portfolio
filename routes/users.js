@@ -484,10 +484,10 @@ module.exports = function (passport) {
 
   /**
    * @swagger
-   * /{apiRoot}/user-info:
+   * /user/user-info:
    *   get:
    *     tags:
-   *       - User API
+   *       - User Auth
    *     summary: Get User Information
    *     description: Get the information of the authenticated user.
    *     produces:

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Validator = require("validatorjs");
 const Trade = require("../models/Trade");
-const Portfolio = require("../models/Portfolio");
+
 const Stock = require("../models/Stock");
 
 const commonMethod = require("../utility/common");
@@ -371,12 +371,6 @@ exports.addTrade = async (req, res) => {
     const trade = await Trade.create(tradeInfo);
 
     if (trade) {
-      await Portfolio.create({
-        user_id: new mongoose.Types.ObjectId(decoded.id),
-        stock_id: new mongoose.Types.ObjectId(stockId),
-        trade_id: new mongoose.Types.ObjectId(trade._id),
-      });
-
       return res.status(201).json({ success: true, data: trade });
     } else {
       return res.status(500).json({

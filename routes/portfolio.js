@@ -37,10 +37,12 @@ module.exports = function (passport) {
 
   /**
    * @swagger
-   * /api/portfolio:
+   * /portfolio:
    *   get:
    *     summary: Get portfolio with pagination
    *     description: Retrieve the entire portfolio with trades, supports pagination.
+   *     tags:
+   *       - Portfolio
    *     parameters:
    *       - in: query
    *         name: page
@@ -93,7 +95,7 @@ module.exports = function (passport) {
 
   /**
    * @swagger
-   * /api/portfolio/holdings:
+   * /portfolio/holdings:
    *   get:
    *     summary: Get holdings in an aggregate view
    *     description: Fetches the aggregate view of user holdings
@@ -153,7 +155,7 @@ module.exports = function (passport) {
 
   /**
    * @swagger
-   * /api/portfolio/returns:
+   * /portfolio/returns:
    *   get:
    *     summary: Get cumulative returns
    *     description: Fetches cumulative returns for the user's portfolio
@@ -209,7 +211,7 @@ module.exports = function (passport) {
 
   /**
    * @swagger
-   * /api/portfolio/addTrade:
+   * /portfolio/addTrade:
    *   post:
    *     summary: Add a trade to the portfolio
    *     description: Add a new trade to the portfolio with the provided trade information.
@@ -261,7 +263,7 @@ module.exports = function (passport) {
 
   /**
    * @swagger
-   * /api/portfolio/updateTrade/{id}:
+   * /portfolio/updateTrade/{id}:
    *   put:
    *     summary: Update a trade
    *     description: Update an existing trade with the specified ID.
@@ -359,7 +361,7 @@ module.exports = function (passport) {
 
   /**
    * @swagger
-   * /api/portfolio/removeTrade/{id}:
+   * /portfolio/removeTrade/{id}:
    *   delete:
    *     summary: Remove a trade
    *     description: Remove an existing trade with the specified ID.
