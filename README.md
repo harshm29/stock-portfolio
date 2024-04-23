@@ -49,6 +49,8 @@ This project is a Stock Portfolio developed using Node.js + Express.js for the b
 
    - Swagger documentation UI: `http://localhost:1500/api-docs`
 
+   - POSTMAN URL:`https://dark-rocket-239741.postman.co/workspace/New-Team-Workspace~3c2e08ea-0eff-4948-9885-8e3324ea9c90/collection/2037382-70f3bb0a-81e0-4074-b7b1-ac2887b02450?action=share&creator=2037382&active-environment=2037382-8820f9b9-99fd-4f2d-84c6-a13066d1e2f4`
+
 ## Technologies Used
 
 - **Backend:**
