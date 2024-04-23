@@ -35,8 +35,8 @@ This project is a Stock Portfolio developed using Node.js + Express.js for the b
    MASTERKEY="SPO"
    FRONTEND="http://localhost:4000/"
    KEY="polling-sjrfvdht"
-   EMAIL_FROM="harshmakavana04@gmail.com"
-   EMAIL_PWD="cfck kqzw sjuq mcne"
+   EMAIL_FROM="xyz@gmail.com"
+   EMAIL_PWD="xy"
    ```
 
 3. **Run the Application:**
